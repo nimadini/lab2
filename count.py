@@ -9,7 +9,7 @@ for root, subFolders, files in os.walk(root_dir):
             continue '''
         myFile = open(os.path.join(root, f), 'r')
         for line in myFile:
-            if len(line.strip()) > 80:
+            if len(line.strip()) > 800:
                 print 'log (inside python code): ' + line.strip()
                 sys.exit(1)
 sys.exit(0)
